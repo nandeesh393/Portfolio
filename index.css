@@ -28,5 +28,24 @@ a:hover {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
   }
 
- 
-  
+
+/* Base button style */
+  .nav-pills .nav-link {
+    background-color: #f9f9f9 !important; /* light grey for inactive */
+    color: #000 !important;
+    margin: 0 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Hover effect */
+  .nav-pills .nav-link:hover {
+    background-color: #e1e1e1 !important; /* slightly darker on hover */
+    color: #000000 !important;
+  }
+
+  /* Active button style */
+  .nav-pills .nav-link.active {
+    background-color: #6c757d !important; /* dark grey for active */
+    color: #fff !important;
+  }
