@@ -1,5 +1,7 @@
 body{
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 
@@ -20,12 +22,13 @@ a:hover {
 
 
 .crd {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .crd:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(171, 3, 3, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
   }
 
 
@@ -54,4 +57,12 @@ ul{
     list-style-type: none;
     padding: 0;
     margin-right: 35px;
+}
+
+.accordion-item{
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
 }
