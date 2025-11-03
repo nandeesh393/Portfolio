@@ -72,3 +72,18 @@ ul{
     margin-top: 500px;
     margin-bottom: 200px;
 }
+
+.image-section img{
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .image-section img{
+        margin-top: 0px;
+    }
+}
+
+.header{
+    font-size: 2.5rem;
+    margin-left: 160px;
+} 

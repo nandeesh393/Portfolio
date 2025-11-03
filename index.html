@@ -14,7 +14,7 @@
     />
   </head>
   <body data-bs-theme="light">
-    <nav class="navbar navbar-expand-md navbar style= bg-#292929 pt-4 pb-5">
+    <nav class="navbar navbar-expand-md navbar style= bg-#292929 pt-4 pb-3">
       <div class="container-xxl">
         <a class="navbar-brand" href="#">
           <span class="text-secondary fw-bold">
@@ -24,8 +24,8 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-around  align-items-center" id="main-nav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+          <ul class="navbar-nav text-end">
             <li class="nav-item">
               <h5><a class="nav-link fw-bold" href="#intro">Home</a></h5>
             </li>
@@ -53,12 +53,15 @@
     </nav>
 
     <section id="intro" class="mb-5 p-1">
-      <div class="container-lg  mb-5">
-        <div class="row justify-content-center align-items-center">
-          <div class="col m-5 text-center align-items-center justify-content-center d-none d-md-block">
-            <img src="./assets/_dsc8860.JPG" class="img-fluid mt-3 shadow-lg p-3 mb-5 bg-body rounded" alt="photo" >
+      <div class="container-lg  mb-5 p-5">
+        <div class="row justify-content-center align-items-center mt-5">
+          <div class="col-md-6 order-md-2 text-center text-md-start m-5 m-md-0">
+            <img src="./assets/_dsc8860.JPG" class="img-fluid mt-3 shadow-lg p-3 mb-5 bg-body rounded d-none d-md-block" alt="photo" mt-5 >
+            <div class="d-block d-md-none text-center">
+              <img src="./assets/_dsc8860.JPG" class="img-fluid w-50 mt-3 shadow-lg p-3 mb-5 bg-body rounded" alt="photo" >
+            </div>
           </div>
-          <div class="col ">
+          <div class="col mb-5">
             <h1>
               <div class="display-5 text-muted">Hello,I am </div>
               <div class="display-2 fw-bold ">Nandeesh A M</div>
@@ -71,14 +74,11 @@
       </div>
     </section>
 
-    <section id="aboutme" class="bg-light mt-5 p-2">
-      <div class="container mt-5 mb-5 p-2">
-        <!-- <div class="text-center">
-          <h2>About Me</h2>
-        </div> -->
+    <section id="aboutme" class="bg-light mt-5 p-5">
+      <div class="container mt-5 mb-5 p-5 shadow bg-body rounded">
         <div class="row ">
-          <div class="col text-center">
-            <h1 class="mb-4 fw-bolder mt-5 ">About Me</h1>
+          <div class="col-md-6 text-center text-md-start p-5 ">
+            <h1 class="mb-5 fw-bolder mt-3 header ">About Me</h1>
             <div class="text">
             <h2>
               <p class="lead fw-semibold">👋 Hi, I’m Nandeesh A M, a passionate Computer Science Engineer (CGPA 9.12) who loves building AI-driven and web-based solutions.<br><br> I’ve interned at Nirmith AI Labs and Calidad Infotech, working on projects like PRAGATHI, PromptMatrix, and Preppanda using React, Django, and Flutter.<br><br> Beyond tech, I’m an IEEE event coordinator, coding club core member, and a football enthusiast who believes in learning through creativity and teamwork.</p>
@@ -86,8 +86,8 @@
               
             </div>
           </div>
-          <div class="col text-center align-items-center justify-content-center d-none d-md-block ">
-            <img src="./assets/_dsc7890.JPG" class="img-fluid shadow-lg p-3 mb-5 ms-4 bg-body rounded" alt="profile" >
+          <div class="col text-center align-items-center justify-content-center d-none d-md-block image-section ">
+            <img src="./assets/_dsc7890.JPG" class="img-fluid shadow-lg p-3 mb-5 ms-4 bg-body rounded" alt="profile">
           </div>
         </div>
       </div>
@@ -196,7 +196,8 @@
     </div>
   </div>
 </section>
-    <!-- Projects -->
+
+
     <section id="project" class="mt-5 mb-5 p-5 project" >
       <div class="container-md p-2" style="background-color: white;">
         <div class="text-center mt-5">
@@ -206,8 +207,7 @@
           <div class="col-lg-8">
             <div class="accordion accordion-flush" id="projects">
               
-              <!-- Project 1 -->
-              <div class="accordion-item mt-3">
+              <div class="accordion-item mt-3 p-5">
                 <h2 class="accordion-header" id="headingOne">
                   <button
                     class="accordion-button collapsed button bg-light"
@@ -233,7 +233,6 @@
                 </div>
               </div>
 
-              <!-- Project 2 -->
               <div class="accordion-item mt-3">
                 <h2 class="accordion-header" id="headingTwo">
                   <button
@@ -260,7 +259,6 @@
                 </div>
               </div>
 
-              <!-- Project 3 -->
               <div class="accordion-item mt-3">
                 <h2 class="accordion-header" id="headingThree">
                   <button
@@ -287,7 +285,6 @@
                 </div>
               </div>
 
-              <!-- Project 4 -->
               <div class="accordion-item mt-3 mb-5 ">
                 <h2 class="accordion-header" id="headingFour">
                   <button
@@ -345,12 +342,14 @@
                 <ul>
                   <li class="mt-3 mb-0">
                     <h5><b>The Coding Club Coordinator </b> conducted UI/UX course for junior students.</li>
+                  </li>
                 </ul>
               </div>
               <div class="list-group-item p-3 shadow bg-body rounded">
                 <ul>
                   <li class="mt-3 mb-0">
                     <h5><b>Secured distinction in all the semesters.</b></li>
+                  </li>
                 </ul>
               </div>
             </div>
