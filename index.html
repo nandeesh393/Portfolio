@@ -422,35 +422,36 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
-    <script type="text/javascript">
-      (function(){
-          // Initialize EmailJS with your Public Key
-          emailjs.init("Kx2-JfeFcWpk_mREG");
-      })();
+<script type="text/javascript">
+   (function(){
+      // KEEP YOUR WORKING PUBLIC KEY HERE
+      emailjs.init("3WQYryCs4qzkVdqWz"); 
+   })();
 
-      // Listen for the form submit event
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevents the page from reloading
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+       
+       // REPLACE THESE WITH YOUR ACTUAL IDS
+       var serviceID = 'service_c6wfgms'; // Look for service_...
+       var templateID = 'template_mp9s3wn'; // Look for template_...
 
-          // Change button text to indicate loading
-          const btn = this.querySelector('button[type="submit"]');
-          const originalText = btn.innerText;
-          btn.innerText = 'Sending...';
+       // DEBUG: This alert will tell you exactly what you are sending
+       alert("Sending with Service ID: " + serviceID + " and Template ID: " + templateID);
 
-          // Send the form data
-          emailjs.sendForm('service_0x0j6fs', 'template_mp9s3wn', this)
-              .then(function() {
-                  // SUCCESS: Show popup and reset form
-                  alert('Message Sent Successfully! I will get back to you soon.');
-                  document.getElementById('contact-form').reset();
-                  btn.innerText = originalText;
-              }, function(error) {
-                  // ERROR: Show error popup
-                  alert('Failed to send message. Please try again later.');
-                  console.log('FAILED...', error);
-                  btn.innerText = originalText;
-              });
-      });
-    </script>
-  </body>
+       const btn = this.querySelector('button[type="submit"]');
+       btn.innerText = 'Sending...';
+
+       emailjs.sendForm(serviceID, templateID, this)
+           .then(function() {
+               alert('Message Sent!');
+               btn.innerText = 'Submit';
+           }, function(error) {
+               console.log('FAILED...', error);
+               alert('Failed: ' + error.text); // specific error text
+               btn.innerText = 'Submit';
+           });
+   });
+</script>
+
+</body>
 </html>
