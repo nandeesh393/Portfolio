@@ -3,452 +3,385 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Nandeesh A M | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
   </head>
 
-  
-  <body data-bs-theme="light">
-    <nav class="navbar navbar-expand-md navbar style= bg-#292929 pt-4 pb-3">
+  <body data-bs-theme="dark">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-3">
       <div class="container-xxl">
         <a class="navbar-brand" href="#">
-          <span class="text-secondary fw-bold">
-          </span>
+          <span class="text-gradient">Nandeesh.</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
-          <ul class="navbar-nav text-end">
-            <li class="nav-item">
-              <h5><a class="nav-link fw-bold" href="#intro">Home</a></h5>
-            </li>
-            <li class="nav-item">
-              <h5><a class="nav-link fw-bold" href="#aboutme">About Me</a></h5>
-            </li>
-            <li class="nav-item">
-              <h5><a class="nav-link fw-bold" href="#education">Education</a></h5>
-            </li>
-            <li  class="nav-item">
-              <h5><a class="nav-link fw-bold" href="#skills">Skills</a></h5>
-            </li>
-            <li class="nav-item">
-              <h5><a class="nav-link fw-bold" href="#project">Projects</a></h5>
-            </li>
-            <li class="nav-item ">
-              <h5><a class="nav-link fw-bold" href="#achievements">Achievements and Participation</a></h5>
-            </li>
-            <li class="nav-item">
-              <h5><a class="nav-link fw-bold" href="#contact">Contact Me</a></h5>
-            </li>
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="#intro">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section id="intro" class="mb-5 p-1">
-      <div class="container-lg  mb-5 p-5">
-        <div class="row justify-content-center align-items-center mt-5">
-          <div class="col-md-6 order-md-2 text-center text-md-start m-5 m-md-0">
-            <img src="./assets/_dsc8860.JPG" class="img-fluid mt-3 shadow-lg p-3 mb-5 bg-body rounded d-none d-md-block" alt="photo" mt-5 >
-            <div class="d-block d-md-none text-center">
-              <img src="./assets/_dsc8860.JPG" class="img-fluid w-50 mt-3 shadow-lg p-3 mb-5 bg-body rounded" alt="photo" >
-            </div>
-          </div>
-          <div class="col mb-5">
-            <h1>
-              <div class="display-5 text-muted">Hello,I am </div>
-              <div class="display-2 fw-bold ">Nandeesh A M</div>
+    <!-- Hero Section -->
+    <section id="intro">
+      <div class="container-lg p-2 mt-4">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-5 mb-md-0">
+            <h1 class="display-2 fw-bold mb-3">
+              Hello, I'm <br>
+              <span class="text-gradient">Nandeesh A M</span>
             </h1>
-            <h3>
-              <p class="text-muted">Web Designer and Web Developer</p>
-            </h3>
+            <h3 class="h2 text-secondary mb-4">Web Designer & Developer</h3>
+            <p class="lead text-secondary mb-5">Building digital experiences with passion and precision.</p>
+            <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+              <a href="#projects" class="btn btn-primary btn-lg">View Work</a>
+              <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="./assets/_dsc8860.JPG" class="img-fluid hero-img w-75" alt="Nandeesh A M">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="aboutme" class="bg-light mt-5 p-5">
-      <div class="container mt-5 mb-5 p-5 shadow bg-body rounded">
-        <div class="row ">
-          <div class="col-md-6 text-center text-md-start p-5 ">
-            <h1 class="mb-5 fw-bolder mt-3 header ">About Me</h1>
-            <div class="text">
-            <h2>
-              <p class="lead fw-semibold">👋 Hi, I’m Nandeesh A M, a passionate Computer Science Engineer (CGPA 9.12) who loves building AI-driven and web-based solutions.<br><br> I’ve interned at Nirmith AI Labs and Calidad Infotech, working on projects like PRAGATHI, PromptMatrix, and Preppanda using React, Django, and Flutter.<br><br> Beyond tech, I’m an IEEE event coordinator, coding club core member, and a football enthusiast who believes in learning through creativity and teamwork.</p>
-            </h2>
-              
-            </div>
+    <!-- About Section -->
+    <section id="aboutme">
+      <div class="container-lg p-2 mt-5 mb-2">
+        <div class="row align-items-center justify-content-center g-5">
+          <div class="col-md-5 text-center d-none d-md-block">
+            <img src="./assets/_dsc7890.JPG" class="img-fluid hero-img rounded-3 w-250" alt="Profile">
           </div>
-          <div class="col text-center align-items-center justify-content-center d-none d-md-block image-section ">
-            <img src="./assets/_dsc7890.JPG" class="img-fluid shadow-lg p-3 mb-5 ms-4 bg-body rounded" alt="profile">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class=" mt-5 p-2">
-      <div class="container-lg mt-5 mb-5">
-        <div class="text-center">
-          <h1 class="mb-5 fw-bolder ">Education</h1>
-        </div>
-      </div>
-
-      <div class="row mt-3 g-4 align-items-stretch justify-content-center p-5">
-      <div class="col-10 col-md-6 col-lg-4 d-flex crd">
-          <div class="card border-0 bg-light shadow-lg w-100">
-            <div class="card-body text-center d-flex flex-column justify-content-between py-4">
-              <div>
-                <h2 class="fw-bold pt-2 mt-2">Bachelor of Engineering (B.E)</h2>
-                <h4 class="lead mb-4">(2021-2025)</h4>
-              </div>
-              <ul class="text-center list-unstyled">
-                <li><h5>Studying in <b>Rao Bahadur Y Mahabaleshwarappa Engineering College-[RYMEC], Ballari.</b></h5></li>
-                <li><h5>Visvesvaraya Technological University, Belagavi, Karnataka</h5></li>
-                <li><h5>Secured <b>9.12 CGPA</b></h5></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-10 col-md-6 col-lg-4 d-flex crd">
-          <div class="card border-0 bg-light shadow-lg w-100">
-            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center py-4">
-              <h2 class="fw-bold pt-2 mt-2">PUC (XII)</h2>
-              <h4 class="lead mb-5">(2020-2021)</h4>
-              <ul class="list-unstyled text-center mt-2">
-                <li><h5>Studied in <b>Vasishta PU College, Ballari</b></h5></li>
-                <li><h5>Pre-University Board, Karnataka</h5></li>
-                <li><h5>Secured <b>90.16%</b></h5></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-10 col-md-6 col-lg-4 d-flex crd">
-          <div class="card border-0 bg-light shadow-lg w-100">
-            <div class="card-body text-center d-flex flex-column justify-content-center align-items-center py-4">
-              <div>
-                <h2 class="fw-bold pt-2 mt-2">SSLC (X)</h2>
-                <h4 class="lead mb-4">(2019-2020)</h4>
-              </div>
-              <ul class="text-center list-unstyled mb-2 mt-2">
-                <li><h5>Studied in <b>Nandi International School, Ballari</b></h5></li>
-                <li><h5>Central Board of Secondary Education</h5></li>
-                <li><h5>Secured <b>82%</b></h5></li>
-              </ul>
+          <div class="col-md-7">
+            <h2 class="section-title">About Me</h2>
+            <div class="card p-5">
+              <p class="lead">
+                👋 Hi, I’m <strong>Nandeesh A M</strong>, a passionate Computer Science Engineer (CGPA 9.12) who loves building AI-driven and web-based solutions.
+              </p>
+              <p class="lead">
+                I’ve interned at Nirmith AI Labs and Calidad Infotech, working on projects like PRAGATHI, PromptMatrix, and Preppanda using React, Django, and Flutter.
+              </p>
+              <p class="lead">
+                Beyond tech, I’m an IEEE event coordinator, coding club core member, and a football enthusiast who believes in learning through creativity and teamwork.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="bg-light p-5 mb-5 mt-5">
-      <div class="text-center">
-        <h1 class="mb-5 fw-bolder mt-3 p-3 ">Skills</h1>
-      </div>
-      <div class="container mt-5 mb-5 p-3 bg-light shadow bg-body rounded">  
-    <nav>
-          <div class="nav nav-pills justify-content-center align-items-center mt-5" id="nav-tabs" role="tablist">
-
-          <button class="nav-link active fw-bold font-monospace" id="nav-technical"
-            data-bs-toggle="tab" data-bs-target="#nav-tech" type="button" role="tab"
-            aria-controls="nav-tech" aria-selected="true">
-            Technical Skills
-          </button>
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container-lg mt-5">
+        <h2 class="section-title">Education</h2>
+        <div class="row g-4 justify-content-center">
           
-          <button class="nav-link fw-bold font-monospace" id="nav-personal"
-            data-bs-toggle="tab" data-bs-target="#nav-per" type="button" role="tab"
-            aria-controls="nav-per" aria-selected="false">
-            Personal Skills
-          </button>
-          </div>
-        </nav>
-        <div class="tab-content align-items-center justify-content-center" id="nav-tabsContent">
-
-          <div class="tab-pane fade show active p-3 mb-5 " id="nav-tech" role="tabpanel" aria-labelledby="nav-technical">
-            <h1 class="mt-3 fw-bold ms-1 p-3">Technical Skills</h1>
-            <ul >
-              <li><h5 class="mt-4">Programming Languages: Python, Java</li>
-              <li><h5 class="mt-4">Frontend Technologies: HTML, CSS, JavaScript, Bootstrap, React.js, Mantine UI</h5></li>
-              <li><h5 class="mt-4">Backend Technologies: Django (Python), REST API</h5></li>
-              <li><h5 class="mt-4">Database: SQL (Oracle SQL, PostgreSQL, MySQL, SQLite)</h5></li>
-              <li><h5 class="mt-4">UI/UX Design: Figma</h5></li>
-              <li><h5 class="mt-4">Tools & Technologies: Git, GitHub, Postman</h5></li>
-              <li><h5 class="mt-4">Soft Skills: Communication, Teamwork, Adaptability, Time Management</h5></li>
-            </ul>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-mortarboard-fill display-4 text-gradient mb-3"></i>
+                <h4 class="card-title mb-1">Bachelor of Engineering</h4>
+                <p class="text-secondary small mb-3">2021 - 2025</p>
+                <hr class="border-secondary opacity-25">
+                <p class="fw-bold mb-1">RYMEC, Ballari</p>
+                <p class="small text-secondary">VTU Belagavi</p>
+                <span class="badge bg-primary mt-2">CGPA: 9.12</span>
+              </div>
+            </div>
           </div>
 
-          <div class="tab-pane fade p-3 mb-4" id="nav-per" role="tabpanel" aria-labelledby="nav-personal">
-            <h1 class="mt-5 fw-bold ms-1 p-3">Personal Skills</h1>
-            <ul class="mb-5 mt-3">
-                <li><h5 class="mt-4">Passionate about working.</h5></li>
-                <li><h5 class="mt-4">Willingness to know new things.</h5></li>
-                <li><h5 class="mt-4 mb-5">Have good grasping skills.</h5></li>
-            </ul>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-book-fill display-4 text-gradient mb-3"></i>
+                <h4 class="card-title mb-1">PUC (XII)</h4>
+                <p class="text-secondary small mb-3">2020 - 2021</p>
+                <hr class="border-secondary opacity-25">
+                <p class="fw-bold mb-1">Vasishta PU College</p>
+                <p class="small text-secondary">Karnataka Board</p>
+                <span class="badge bg-secondary mt-2">90.16%</span>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-backpack-fill display-4 text-gradient mb-3"></i>
+                <h4 class="card-title mb-1">SSLC (X)</h4>
+                <p class="text-secondary small mb-3">2019 - 2020</p>
+                <hr class="border-secondary opacity-25">
+                <p class="fw-bold mb-1">Nandi International School</p>
+                <p class="small text-secondary">CBSE</p>
+                <span class="badge bg-secondary mt-2">82%</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section id="project" class="mt-5 mb-5 p-5 project" >
-      <div class="container-md p-2" style="background-color: white;">
-        <div class="text-center mt-5">
-          <h1 class="fw-bolder">Projects</h1>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container-lg">
+        <h2 class="section-title">Skills</h2>
+        
+        <div class="card p-4">
+          <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-tech-tab" data-bs-toggle="pill" data-bs-target="#pills-tech" type="button" role="tab">Technical</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-soft-tab" data-bs-toggle="pill" data-bs-target="#pills-soft" type="button" role="tab">Personal</button>
+            </li>
+          </ul>
+          
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-tech" role="tabpanel">
+              <div class="row g-3">
+                <div class="col-md-6"><div class="skill-item">Python, Java</div></div>
+                <div class="col-md-6"><div class="skill-item">HTML, CSS, JS, React.js</div></div>
+                <div class="col-md-6"><div class="skill-item">Django, REST API</div></div>
+                <div class="col-md-6"><div class="skill-item">SQL (Oracle, Postgres, MySQL)</div></div>
+                <div class="col-md-6"><div class="skill-item">Figma (UI/UX)</div></div>
+                <div class="col-md-6"><div class="skill-item">Git, GitHub, Postman</div></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-soft" role="tabpanel">
+              <div class="row g-3">
+                <div class="col-md-6"><div class="skill-item">Passionate Learner</div></div>
+                <div class="col-md-6"><div class="skill-item">Teamwork & Leadership</div></div>
+                <div class="col-md-6"><div class="skill-item">Adaptability</div></div>
+                <div class="col-md-6"><div class="skill-item">Time Management</div></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row justify-content-around align-items-center p-2 mt-5">
-          <div class="col-lg-8">
-            <div class="accordion accordion-flush" id="projects">
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container-lg">
+        <h2 class="section-title">Projects</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion" id="projectsAccordion">
               
-              <div class="accordion-item mt-3 ">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button collapsed button bg-light"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    <span><b>PRAGATHI : Govt Project</b></span>
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    PRAGATHI : Govt Project
                   </button>
                 </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#projects"
-                >
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
                   <div class="accordion-body">
                     <p>Project developed to review and monitor inspections by line department officers of Zilla Panchayat.</p>
-                    <p>Developed using HTML, CSS, MongoDB, Java (Spring Boot).</p>
+                    <span class="badge bg-secondary">HTML/CSS</span>
+                    <span class="badge bg-secondary">MongoDB</span>
+                    <span class="badge bg-secondary">Java Spring Boot</span>
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item mt-3">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed bg-light"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    <b>Attendance Management System (AMS)</b>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Attendance Management System (AMS)
                   </button>
                 </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#projects"
-                >
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
                   <div class="accordion-body">
                     <p>Developed to track and manage attendance of individuals within an organization or educational institution.</p>
-                    <p>Developed using React, Mantine UI, SQLite3, Django.</p>
+                    <span class="badge bg-secondary">React</span>
+                    <span class="badge bg-secondary">Mantine UI</span>
+                    <span class="badge bg-secondary">Django</span>
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item mt-3">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed bg-light"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    <b>PROMPTMATRIX</b>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    PROMPTMATRIX
                   </button>
                 </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#projects"
-                >
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
                   <div class="accordion-body">
                     <p>Built promptmatrix.ai to create, manage, and share prompts.</p>
-                    <p>Developed using React, Mantine UI, Django, DRF, PostgreSQL.</p>
+                    <span class="badge bg-secondary">React</span>
+                    <span class="badge bg-secondary">Django DRF</span>
+                    <span class="badge bg-secondary">PostgreSQL</span>
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item mt-3 mb-5 ">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed bg-light"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    <b>PrepPanda</b>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    PrepPanda
                   </button>
                 </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#projects"
-                >
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectsAccordion">
                   <div class="accordion-body">
                     <p>AI-powered app helping students learn via summarizers, helpers, etc.</p>
-                    <p>Developed using Flutter, Django, DRF, PostgreSQL.</p>
+                    <span class="badge bg-secondary">Flutter</span>
+                    <span class="badge bg-secondary">Django</span>
+                    <span class="badge bg-secondary">PostgreSQL</span>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    <section id="achievements" class="bg-light p-5 mb-5 ">
+    <!-- Achievements Section -->
+    <section id="achievements">
       <div class="container-lg">
-        <div class="text-center">
-          <h1 class="p-3 mt-5"><i class="bi bi-trophy-fill"></i><b> Achievements and Participation </b> <i class="bi bi-trophy-fill"></i></h1>
-        </div>
-        <div class="row justify-content-center my-5">
-          <div class="col-lg-8 ">
+        <h2 class="section-title">Achievements</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
             <div class="list-group">
-              <div class="list-group-item mt-3 mb-1 shadow bg-body rounded p-3">
-                <ul>
-                  <li class="mt-3 mb-0">
-                    <h5><b>Coordinator for the IEEE Event (Ideathon)</b> conducted in RYMEC College on February 2024</h5>
-                  </li>
-                </ul>
+              <div class="list-group-item p-4">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <h5 class="mb-1">IEEE Event Coordinator</h5>
+                  <small class="text-muted">Feb 2024</small>
+                </div>
+                <p class="mb-1 text-secondary">Coordinated the Ideathon at RYMEC College.</p>
               </div>
-              <div class="list-group-item p-3 mb-1 shadow bg-body rounded">
-                <ul>
-                  <li class="mt-3 mb-0">
-                    <h5><b>Represented the College Football Team</b> in the VTU Zonal Football Tournament held in Bidar during December 2020.</li>
-                </ul>
+              <div class="list-group-item p-4">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <h5 class="mb-1">VTU Zonal Football</h5>
+                  <small class="text-muted">Dec 2022</small>
+                </div>
+                <p class="mb-1 text-secondary">Represented the College Football Team in Bidar.</p>
               </div>
-              <div class="list-group-item p-3 mb-1 shadow bg-body rounded">
-                <ul>
-                  <li class="mt-3 mb-0">
-                    <h5><b>The Coding Club Coordinator </b> conducted UI/UX course for junior students.</li>
-                  </li>
-                </ul>
+              <div class="list-group-item p-4">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <h5 class="mb-1">Coding Club Coordinator</h5>
+                  <small class="text-muted">RYMEC</small>
+                </div>
+                <p class="mb-1 text-secondary">Conducted UI/UX course for junior students.</p>
               </div>
-              <div class="list-group-item p-3 shadow bg-body rounded">
-                <ul>
-                  <li class="mt-3 mb-0">
-                    <h5><b>Secured distinction in all the semesters.</b></li>
-                  </li>
-                </ul>
+              <div class="list-group-item p-4">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <h5 class="mb-1">Academic Excellence</h5>
+                  <small class="text-muted">All Semesters</small>
+                </div>
+                <p class="mb-1 text-secondary">Secured distinction in all semesters.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  
+
+    <!-- Contact Section -->
     <section id="contact">
-      <div class="container-lg p-3 mt-5 ">
-        
-        <div class="text-center mt-5 ">
-          <h1 class=" fw-bolder">Contact Me</h1>
-          <p class="lead text-muted mb-5 mt-4">Have a question or want to work together? Let's connect!</p>
-        </div>
-        <div class="row justify-content-center my-5">
+      <div class="container-lg">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="row justify-content-center">
           <div class="col-lg-6">
-            
-            <form id="contact-form">
-              <label for="email" class="form-label">Email address:</label>
-              <div class="input-group mb-4">
-                <input type="email" name="user_email" id="email" class="form-control" placeholder="e.g. name@example.com" required />
-              </div>
-              
-              <label for="name" class="form-label">Name:</label>
-              <div class="mb-4 input-group">
-                <input type="text" name="user_name" id="name" class="form-control" placeholder="e.g. Name" required />
-              </div>
-              
-              <label for="query" class="form-label">Your Query:</label>
-              <div class="mb-4 mt-0 form-floating">
-                <textarea class="form-control" name="message" id="query" style="height: 140px" placeholder="query" required></textarea>
-                <label for="query">Your query...</label>
-              </div>
-              
-              <div class="mb-4 text-center">
-                <button type="submit" class="btn btn-secondary">Send</button>
-              </div>
-            </form>
+            <div class="card p-5">
+              <form id="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="user_name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="user_email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-4">
+                  <label for="query" class="form-label">Message</label>
+                  <textarea class="form-control" id="query" name="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="mb-0">&copy; 2025 Nandeesh A M. All rights reserved.</p>
+        <div class="mt-2">
+          <a href="#" class="text-secondary me-3"><i class="bi bi-github"></i></a>
+          <a href="#" class="text-secondary me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-secondary"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      const tooltips = document.querySelectorAll('.tt')
-      tooltips.forEach(t => {
-        new bootstrap.Tooltip(t)
-      })
-    </script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-     <script src="/bootstrap-5.0.2-dist/css/bootstrap.css"></script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-
-<script type="text/javascript">
-   (function(){
-      // KEEP YOUR WORKING PUBLIC KEY HERE
-      emailjs.init("3WQYryCs4qzkVdqWz"); 
-   })();
-
-   document.getElementById('contact-form').addEventListener('submit', function(event) {
-       event.preventDefault();
-       
-       // REPLACE THESE WITH YOUR ACTUAL IDS
-       var serviceID = 'service_c6wfgms'; // Look for service_...
-       var templateID = 'template_mp9s3wn'; // Look for template_...
-       
-       const btn = this.querySelector('button[type="submit"]');
-       btn.innerText = 'Sending...';
-
-       emailjs.sendForm(serviceID, templateID, this)
-           .then(function() {
-               alert('Message Sent!');
-               btn.innerText = 'Submit';
-           }, function(error) {
-               console.log('FAILED...', error);
-               alert('Failed: ' + error.text); // specific error text
-               btn.innerText = 'Submit';
-           });
-   });
-</script>
-
-</body>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("3WQYryCs4qzkVdqWz"); 
+       })();
+    
+       document.getElementById('contact-form').addEventListener('submit', function(event) {
+           event.preventDefault();
+           
+           var serviceID = 'service_c6wfgms'; 
+           var templateID = 'template_mp9s3wn'; 
+           
+           const btn = this.querySelector('button[type="submit"]');
+           const originalText = btn.innerText;
+           btn.innerText = 'Sending...';
+           btn.disabled = true;
+    
+           emailjs.sendForm(serviceID, templateID, this)
+               .then(function() {
+                   alert('Message Sent Successfully!');
+                   btn.innerText = originalText;
+                   btn.disabled = false;
+                   document.getElementById('contact-form').reset();
+               }, function(error) {
+                   console.log('FAILED...', error);
+                   alert('Failed to send message: ' + JSON.stringify(error));
+                   btn.innerText = originalText;
+                   btn.disabled = false;
+               });
+       });
+    </script>
+  </body>
 </html>
