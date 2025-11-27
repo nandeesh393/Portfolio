@@ -77,9 +77,10 @@ h6 {
   color: var(--text-secondary) !important;
   font-weight: 500;
   font-size: 1.3rem;
-  margin: 0 20px;
+  margin: 0 80px 0 0;
   transition: var(--transition);
   position: relative;
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -120,6 +121,42 @@ h6 {
   padding-top: 80px;
 }
 
+.portfolio-title {
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff8800, #ffbb33);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00eaff, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-resume {
+  border: 2px solid #00eaff;
+  color: #00eaff;
+  background: rgba(0, 234, 255, 0.05);
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.2);
+}
+
+/* Hover Effect */
+.btn-resume:hover {
+  background: linear-gradient(90deg, #00eaff, #007bff);
+  color: #000;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(0, 234, 255, 0.5);
+}
+
+
+
+
 .hero-img {
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
@@ -128,6 +165,20 @@ h6 {
 }
 
 .hero-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 60px rgba(56, 189, 248, 0.2);
+}
+
+.hero-img2 {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--glass-border);
+  transition: var(--transition);
+  margin-top: 500px;
+  height: 400px;
+}
+
+.hero-img2:hover {
   transform: scale(1.02);
   box-shadow: 0 25px 60px rgba(56, 189, 248, 0.2);
 }
@@ -168,7 +219,7 @@ section {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 60px rgba(6, 180, 255, 0.2);
   border-color: var(--accent-color);
 }
 
@@ -185,17 +236,17 @@ section {
 /* Skills */
 .nav-pills .nav-link {
   background: var(--card-bg);
-  color: var(--text-secondary);
   border: 1px solid var(--glass-border);
   margin: 0 5px;
   border-radius: 50px;
   padding: 10px 25px;
+  color: #000;
 }
 
 .nav-pills .nav-link.active {
-  background: var(--accent-color);
-  color: #fff;
+  background: linear-gradient(90deg, #00eaff, #007bff);
   box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+  color: #000 !important;
 }
 
 .skill-item {
