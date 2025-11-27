@@ -349,6 +349,18 @@ footer {
   margin-top: 50px;
 }
 
+.footer-icons a i {
+  font-size: 1.5rem;       /* Increase icon size */
+  color: #00eaff;          /* Matches your portfolio theme */
+  transition: 0.3s ease;
+}
+
+.footer-icons a i:hover {
+  color: #007bff;          /* Blue hover */
+  transform: translateY(-3px);
+}
+
+
 /* Utilities */
 .bg-light {
   background-color: transparent !important;
